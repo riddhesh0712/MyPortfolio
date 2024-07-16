@@ -6,7 +6,7 @@ import AboutMe from './pages/AboutMe.jsx'
 import Skills from './pages/skills.jsx'
 import Portfolio from './pages/Portfolio.jsx'
 import Blogs from './pages/blogs.jsx'
-import ContactMe from './pages/home.jsx'
+import Contact from './pages/Contact.jsx'
 
 
 export const App = () => {
@@ -19,7 +19,7 @@ export const App = () => {
             <Route path='/skills' element={<Skills />}/>
             <Route path='/portfolio' element={<Portfolio />}/>
             <Route path='/blogs' element={<Blogs />}/>
-            <Route path='/contact' element={<ContactMe />}/>
+            <Route path='/contact' element={<Contact />}/>
         </Routes>
     </div>
   )
