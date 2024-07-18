@@ -136,6 +136,7 @@ const Pagination = () => {
     <div>
       <div className="grid grid-cols-1 gap-6">
         {currentItems.map((blog, index) => (
+          
           <BlogCard
             key={index}
             image={blog.image}
@@ -148,7 +149,7 @@ const Pagination = () => {
       </div>
 
       <div className="flex justify-center mt-6">
-        <nav className="flex space-x-2 p-8">
+        <nav className="flex space-x-2 p-12">
           <button
             onClick={handlePrevClick}
             className={`px-4 py-2 rounded ${
@@ -162,9 +163,9 @@ const Pagination = () => {
             <button
               key={pageNumber}
               onClick={() => handleClick(pageNumber)}
-              className={`px-4 py-2 rounded ${
+              className={`px-4 py-2  ${
                 currentPage === pageNumber
-                  ? 'bg-thirtaryColor text-white'
+                  ? 'bg-thirtaryColor text-secondaryColor'
                   : 'bg-gray-200 text-gray-700'
               }`}
             >

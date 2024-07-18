@@ -4,7 +4,7 @@
 
 @layer components {
     .navItems{
-        @apply flex space-x-4 py-4 px-1 lg:px-6  hover:bg-gradient-to-r from-thirtaryColor to-primaryColor  
+        @apply flex space-x-4 py-4 px-1 lg:px-6  hover:bg-gradient-to-r from-secondaryColor to-primaryColor  
     }
     .navLink{
         @apply w-full

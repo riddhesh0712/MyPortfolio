@@ -1,12 +1,12 @@
 import React from 'react'
 import SideNavbar from './components/SideNavbar'
 import { Route, Routes } from 'react-router-dom'
-import Home from './pages/home.jsx'
-import AboutMe from './pages/AboutMe.jsx'
-import Skills from './pages/skills.jsx'
-import Portfolio from './pages/Portfolio.jsx'
-import Blogs from './pages/blogs.jsx'
-import Contact from './pages/Contact.jsx'
+import Home from './pages/user/Home.jsx'
+import AboutMe from './pages/user/AboutMe.jsx'
+import Skills from './pages/user/skills.jsx'
+import Portfolio from './pages/user/Portfolio.jsx'
+import Blogs from './pages/user/blogs.jsx'
+import Contact from './pages/user/Contact.jsx'
 
 
 export const App = () => {

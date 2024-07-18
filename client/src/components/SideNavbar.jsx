@@ -21,7 +21,7 @@ const SideNavbar = () => {
   return (
     <div className="">
       {/* Sidebar */}
-      <div className="flex flex-col justify-start fixed left-0 top-0 w-full lg:h-[100vh] lg:w-[20%] bg-secondaryColor text-white shadow-xl">
+      <div className="flex flex-col justify-start fixed left-0 top-0 w-full lg:h-[100vh] lg:w-[20%] bg-secondaryColor text-white ">
         <div className="flex justify-between items-center">
           {/* Responsive Navigation Bar */}
           <div className="flex items-end px-10 py-6 lg:pb-5 lg:pt-10">
@@ -35,7 +35,7 @@ const SideNavbar = () => {
           </div>
         </div>
         {/* Side bar nav items */}
-        <div className={`${nav ? 'block' : 'hidden'} lg:block h-screen lg:mt-10 w-full transition-all ease-in-out duration-700`}>
+        <div className={`${nav ? 'block' : 'hidden'} lg:block h-screen lg:mt-10 w-full p-10 lg:p-0 transition-all ease-in-out duration-700`}>
           <ul className="flex flex-col justify-center items-start w-full">
             <Link to="/" onClick={() => setNav(false)} className='navLink'>
               <li className="navItems">

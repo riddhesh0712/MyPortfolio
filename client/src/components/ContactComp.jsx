@@ -6,18 +6,27 @@ import '../style/template.css'
 
 export const ContactComp = () => {
   return (
-    <div className='h-screen fixed left-[20%] w-[80%] bg-cover ' style={{backgroundImage: `url(${Background})`}}>
-      <div className='p-20' >
-        <div className='relative'> 
-          <div className='flex flex-col lg:flex-row'>
-            <div className='flex flex-1 justify-center p-10'>
-              <img src={ContactSvg} alt="" />
+    <div className='h-screen fixed left-[20%] w-[80%] bg-primaryColor '>
+      <div className='p-10' >
+        <div>
+          <div>
+            <div>
+              <h1>Contact</h1>
             </div>
-            <div className='flex flex-col  flex-1 text-white backdrop-blur-md p-10 rounded-2xl shadow-xl'>
-              <div>
-                <h1 className='text-center text-4xl font-bold'>Connect with Me!</h1>
-              </div>
-              <div className='py-10'>
+          </div>
+          <div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+export default ContactComp
+
+
+
+{/* <div className='py-10'>
                 <form>
                   <div className="flex flex-wrap -mx-3 mb-6">
                     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -60,12 +69,4 @@ export const ContactComp = () => {
                     <Button type="submit" first="Send" second="Message"/>
                   </div>
                 </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-export default ContactComp
+              </div> */}

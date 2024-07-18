@@ -6,9 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primaryColor: "#fea004",
+        // fea004
+        // ffd60ae37407
+        primaryColor: "#614B3E",
         secondaryColor: "#1A1A1D",
-        thirtaryColor: "#e37407"
+        thirtaryColor: "#fff"
       },
       clipPath: {
         'left': 'polygon(0 0, 51% 0, 51% 100%, 0 100%)',
