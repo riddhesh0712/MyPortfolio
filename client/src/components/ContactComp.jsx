@@ -1,7 +1,4 @@
 import React from 'react'
-import ContactSvg from '../assets/contactSvg.svg'
-import Background from '../assets/Background.jpg'
-import Button from '../template/Button.jsx'
 import '../style/template.css'
 
 export const ContactComp = () => {

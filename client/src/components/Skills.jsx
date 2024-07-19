@@ -1,6 +1,5 @@
 import React from 'react'
 import SkillBar from '../template/SkillsBar'
-import RevealLeft from '../animation/RevealLeft.tsx'
   const skills = [
     { name: 'HTML 5', percentage: 95 },
     { name: 'JAVASCRIPT', percentage: 75 },

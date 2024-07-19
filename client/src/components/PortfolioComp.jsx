@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { ProjectCard } from '../template/ProjectCard';
 import GetInTouch from './GetInTouch';
 import RevealLeft from '../animation/RevealLeft.tsx'

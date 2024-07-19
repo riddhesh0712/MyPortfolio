@@ -7,7 +7,6 @@ import aa4 from '../assets/aa4.jpg'
 import Reveal from '../animation/Reveal.tsx'
 import RevealRight from '../animation/RevealRight.tsx'
 
-import HeroBg from '../assets/heroBg.jpg'
 
 export const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
