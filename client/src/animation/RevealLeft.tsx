@@ -34,7 +34,7 @@ export const RevealLeft = ({ children, width = "fit-content" }: Props) => {
         {children}
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         variants={{
           hidden: { right: 0 },
           visible: { right: "100%" },
@@ -51,7 +51,7 @@ export const RevealLeft = ({ children, width = "fit-content" }: Props) => {
           background: "#092327",
           zIndex: 20,
         }}
-      />
+      /> */}
     </div>
   )
 }

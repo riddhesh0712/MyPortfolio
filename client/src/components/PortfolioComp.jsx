@@ -1,5 +1,8 @@
 import React, { useRef } from 'react';
 import { ProjectCard } from '../template/ProjectCard';
+import GetInTouch from './GetInTouch';
+import RevealLeft from '../animation/RevealLeft.tsx'
+import RevealRight from '../animation/RevealRight.tsx'
 
 const projects = [
   { id: 1, title: 'Project 1', description: 'Description 1', imageUrl: 'https://via.placeholder.com/150' },
@@ -14,29 +17,40 @@ export const PortfolioComp = () => {
   
 
   return (
-    <div className='flex flex-1 min-h-screen ml-0 lg:mt-0 fixed lg:left-[20%] w-full lg:w-[80%] -z-10 lg:p-10 bg-primaryColor'>
-      <div className='text-white w-full h-screen max-w-screen-lg'>
+    <div className='flex flex-1 overflow-scroll scrollbar-thin scrollbar-thumb-[#754e38] scrollbar-track-transparen ml-0 lg:mt-0 fixed lg:left-[20%] w-full lg:w-[80%] -z-10  bg-primaryColor'>
+      <div className='text-white w-full h-screen max-w-screen-lg  '>
         <div className='p-5 mt-20 lg:mt-0'>
-          <div className=''>
+          <div className='p-10'>
+            <RevealLeft>
             <h1 className='text-3xl lg:text-4xl font-bold'>Projects</h1>
+
+            </RevealLeft>
           </div>
         </div>
-        <div className='relative p-5'>
-          
-          <div
-            className='flex overflow-x-scroll scrollbar-thin scrollbar-thumb-[#754e38] scrollbar-track-transparent  '
-          >
-            {projects.map((item, index) => (
-              <div key={index} className='flex-shrink-0 w-1/3 p-4'>
+        <div className='p-10 overflow-x-auto scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent'>
+          <RevealRight>
+          <div className='flex space-x-6'>
+            {projects.map((item) => (
+              <div key={item.id} className='flex-shrink-0 w-64'>
                 <ProjectCard
-                  title={item.title}
-                  description={item.description}
                   imageUrl={item.imageUrl}
+                  title={item.title}
+                  date={item.date}
+                  description={item.description}
                 />
               </div>
             ))}
           </div>
+          </RevealRight>
+          
         </div>
+        <RevealLeft>
+          <div className='py-10 w-full'>
+            {/* Get in touch */}
+          
+            <GetInTouch />
+          </div>
+        </RevealLeft>
       </div>
     </div>
   );

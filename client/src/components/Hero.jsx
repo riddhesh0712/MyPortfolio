@@ -59,7 +59,7 @@ export const Hero = () => {
               </Reveal>
             </div>
           </div>
-          <div className="flex flex-1 flex-col justify-end items-end lg:pt-20 pl-16">
+          <div className="flex flex-1 flex-col justify-end items-end lg:pt-20 lg:pl-16">
             <RevealRight>
               <img src={HeroSvg} alt="Profile of Riddhesh" className="object-cover h-[100%] overflow-visible" />
 

@@ -25,7 +25,7 @@ const SideNavbar = () => {
         <div className="flex justify-between items-center">
           {/* Responsive Navigation Bar */}
           <div className="flex items-end px-10 py-6 lg:pb-5 lg:pt-10">
-            <SiDevpost size={35} />
+            {/* <SiDevpost size={35} /> */}
             <span className="text-3xl md:text-4xl">.Dev</span>
           </div>
           <div className="relative block lg:hidden p-5">

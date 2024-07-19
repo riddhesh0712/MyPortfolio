@@ -5,7 +5,7 @@ import RevealRight from '../animation/RevealRight.tsx'
 
 export const AboutMeComp = () => {
   return (
-    <div className='fixed h-screen lg:left-[20%] w-full -z-10 lg:w-[80%] overflow-y-scroll bg-primaryColor '>
+    <div className='fixed h-screen lg:left-[20%] w-full -z-10 lg:w-[80%] mt-16 lg:mt-0 overflow-y-scroll bg-primaryColor '>
         <div className='flex flex-col lg:flex-row justify-center p-10'> 
             <div className='flex flex-col flex-1 justify-start text-white'>
                 <Reveal>
